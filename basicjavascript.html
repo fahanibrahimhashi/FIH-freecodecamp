@@ -456,7 +456,6 @@ function testEqual(val) {
 
 testEqual(10);
 
-
 <!-- Comparison with the Strict Equality Operator -->
 <!-- Use the strict equality operator in the if statement so the function will return the string Equal when val is strictly equal to 7. -->
 // Setup
@@ -468,7 +467,6 @@ function testStrict(val) {
 }
 
 testStrict(10);
-
 
 <!-- Practice comparing different values -->
 <!-- The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns the string Equal only when the values are strictly equal. -->
@@ -482,8 +480,17 @@ function compareEquality(a, b) {
 
 compareEquality(10, "10");
 
-
 <!-- Comparison with the Inequality Operator -->
+<!-- Add the inequality operator != in the if statement so that the function will return the string Not Equal when val is not equivalent to 99. -->
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(10);
 
 <!-- Comparison with the Strict Inequality Operator -->
 
